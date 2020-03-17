@@ -1,0 +1,16 @@
+html, body {
+	margin: 0;
+	font-family: 'roboto';
+}
+
+.page_container {}
+
+.navigation {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.main {}
+
+.footer {}
