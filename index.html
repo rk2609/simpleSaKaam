@@ -3,38 +3,58 @@
 <head>
 	<title>Simple Sa Kaam</title>
 	<meta name="robots" content="noindex">
-	<link rel="stylesheet" type="text/css" href="tachyons.css">
 	<link rel="stylesheet" type="text/css" href="index.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://kit.fontawesome.com/a6d659ddf7.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <div class="page_container">
-	<div class="navigation fl w-100 bg-black white bb b--light-blue bw2 mb4">
-		<img src="./wanderon_logo.png" width="100px" height="auto" class="pr3">
-		<span class="heading f1 fw6">TRAVEL PIGGY BANK</span>
+	<div class="navigation">
+		<div class="image_div"><img src="./wanderon_logo.png" class="wanderon_logo"></div>
+		<span class="heading">RESERVE BANK OF TRAVEL</span>
+		<span class="logo_width"></span>
 	</div>
-	<div class="main">
-		<div class='why'>
-			<div class="f4 tc fl w-25 pa2 black" style="height: 150px; display: flex; justify-content: space-around; align-items: center; flex-direction: column;">
-				<i class="shadow-1 hover-dark-blue br4 pa2 light-blue f-headline fas fa-ad"></i>
-				<span>Text</span>
+	<div class="icons">
+		<div class="icons_item">
+			<div class="icons_item_image_div"><img src="./percent.svg" class="icons_item_image"></div>
+			<div class="icons_item_text">Minimum Costing Trips</div>
+		</div>
+		<div class="icons_item">
+			<div class="icons_item_image_div"><img src="./tick.svg" class="icons_item_image"></div>
+			<div class="icons_item_text">Tick Off Your BucketList</div>
+		</div>
+		<div class="icons_item">
+			<div class="icons_item_image_div"><img src="./calendar.svg" class="icons_item_image"></div>
+			<div class="icons_item_text">Flexibility with dates</div>
+		</div>
+	</div>
+	<div class="trips_container">
+		<div class="trips_item trips_cards_items_image_ladakh">
+			<div class="trips_item_text">
+				<div class="trips_item_text_heading">Leh Ladakh</div>
+				<div class="trips_item_text_discount">Upto INR 10,000/- off</div>
 			</div>
-			<div class="f4 tc fl w-25 pa2 black" style="height: 150px; display: flex; justify-content: space-around; align-items: center; flex-direction: column;">
-				<i class="shadow-1 hover-dark-blue br4 pa2 light-blue f-headline fab fa-adobe"></i>
-				<span>Text</span>
+		</div>
+		<div class="trips_item trips_cards_items_image_spiti">
+			<div class="trips_item_text">
+				<div class="trips_item_text_heading">Spiti Valley</div>
+				<div class="trips_item_text_discount">Upto INR 10,000/- off</div>
 			</div>
-			<div class="f4 tc fl w-25 pa2 black" style="height: 150px; display: flex; justify-content: space-around; align-items: center; flex-direction: column;">
-				<i class="shadow-1 hover-dark-blue br4 pa2 light-blue f-headline fab fa-algolia"></i>
-				<span>Text</span>
+		</div>
+		<div class="trips_item trips_cards_items_image_bhutan">
+			<div class="trips_item_text">
+				<div class="trips_item_text_heading">Bhutan</div>
+				<div class="trips_item_text_discount">Upto INR 10,000/- off</div>
 			</div>
-			<div class="f4 tc fl w-25 pa2 black" style="height: 150px; display: flex; justify-content: space-around; align-items: center; flex-direction: column;">
-				<i class="shadow-1 hover-dark-blue br4 pa2 light-blue f-headline fas fa-american-sign-language-interpreting"></i>
-				<span>Text</span>
+		</div>
+		<div class="trips_item trips_cards_items_image_meghalaya">
+			<div class="trips_item_text">
+				<div class="trips_item_text_heading">Meghalaya</div>
+				<div class="trips_item_text_discount">Upto INR 10,000/- off</div>
 			</div>
 		</div>
 	</div>
-	<div class="footer"></div>
+	<div class="faq_container"></div>
 </div>
 </body>
 <script src="index.js"></script>

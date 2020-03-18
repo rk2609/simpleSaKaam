@@ -1,16 +1,252 @@
 html, body {
 	margin: 0;
-	font-family: 'roboto';
+	font-family: 'montserrat';
+	font-family: Gotham Medium;
+	font-size: 16px;
 }
 
 .page_container {}
 
 .navigation {
-	display: flex;
-	justify-content: center;
+	display: grid;
+	grid-template-columns: 10fr 80fr 10fr;
 	align-items: center;
+	background-color: #479f99;
+	color: white;
+	text-align: center;
 }
 
 .main {}
 
 .footer {}
+
+.logo_width {}
+
+.heading {
+	font-size: 3.5em;
+
+}
+
+.wanderon_logo {
+	height: 100px; 
+}
+
+.image_div {
+	width: 100%;
+}
+
+.icons {
+	height: 100px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	padding: 15px 0px;
+	border-bottom: 2px solid #00000030;
+}
+
+.icons_item {
+	height: 60%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 30%;
+	font-size: 1.5em;
+	color: #479f99;
+	box-shadow: 0px 0px 2px 1px #479f9960;
+	border-radius: 200px;
+}
+
+.icons_item_image_div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 60%;
+	margin-right: 0.5em; 
+}
+
+.icons_item_image {
+	height: 1.5em;
+}
+
+.icons_item_text {
+	height: 60%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.trips_container {
+	position: sticky;
+	top: -200px;
+	background-image: linear-gradient(to top, rgba(255,255, 255,0.8) 0%, rgba(255, 255, 255 ,0.8) 100%), url('background.png');
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 450px;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.trips_item {
+	width: 20%;
+	border-radius: 15px;
+	box-shadow: 0px 0px 4px 1px #00000050;
+	height: 80%;
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: column;
+	justify-content: flex-end;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.trips_item_text {
+	background-color: red;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	height: 20%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	background-color: #00000000;
+	color: white;
+	padding: 3px 0px;
+}
+
+.trips_item_text_heading {
+	height: 60%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 10px;
+	font-size: 1.5em;
+}
+
+.trips_item_text_discount {
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	height: 40%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 10px;
+	font-family: 'Gotham Light';
+	font-weight: 500;
+}
+
+.trips_cards_items_image_ladakh {
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url('ladakh.jpg');
+}
+
+.trips_cards_items_image_spiti {
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url('spiti.jpg');
+}
+
+.trips_cards_items_image_bhutan {
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url('bhutan.jpg');
+}
+
+.trips_cards_items_image_meghalaya {
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url('https://www.wanderon.in/wp-content/uploads/2019/07/meghalaya.jpg');
+}
+
+.faq_container {
+	width: 80%;
+	margin: 30px auto;
+}
+
+.faq_item {
+	border-radius: 5px;
+	margin-top:5px;
+	font-family: 'Gotham Light';
+	font-weight: 600;
+}
+
+.faq_item_que {
+	display: grid;
+	grid-template-columns: 3fr 80fr 3fr;
+	height: 3em;
+	transition: margin 1000ms ease;
+	-webkit-transition: margin 1000ms ease;
+}
+
+.faq_item_que_mark {
+	color: #479f99;
+	background-color: #479f9920;
+	font-size: 1.5em;
+	font-weight: 500;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border: 1px solid #479f99;
+}
+
+.faq_item_que_text {
+	display: flex;
+	align-items: center;
+	padding-left: 5px;
+	border: 1px solid #479f99;
+	border-right-width: 0px;
+}
+
+.faq_item_que_sign {
+	border: 1px solid #000000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.faq_item_que_image {
+	width: 60%;
+	height: auto;
+}
+
+.faq_item_que_active {
+	border-bottom: 2px solid white;
+}
+
+.faq_item_que_active .faq_item_que_sign {
+		border-bottom-right-radius: 0px;
+	}
+
+.faq_item_que_active .faq_item_que_mark {
+		border-bottom-left-radius: 0px;
+	}
+
+.faq_item_ans {
+	transition: height 1000ms ease;
+	-webkit-transition: height 1000ms ease;
+	transition: color 1000ms ease;
+	-webkit-transition: color 1000ms ease;
+	transition: margin 1000ms ease;
+	-webkit-transition: margin 1000ms ease;
+	display: grid;
+	grid-template-columns: 3fr 80fr 3fr;
+	grid-template-areas: ". text .";
+	background-color: #479f99;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.faq_item_ans_text {
+	grid-area: text;
+	padding: 20px 5px;
+}
+
+.faq_item_ans {
+	height: 0;
+	color: #00000000;
+}
+
+.faq_item_ans_active {
+}
